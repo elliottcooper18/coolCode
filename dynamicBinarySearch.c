@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int sum(int);
 int *createArray(int);
 void inputElements(int*, int);
 int getKey();
@@ -90,13 +89,4 @@ int *createArray(int numberOfElements)
     numbers = (int*)malloc(numberOfElements * sizeof(int));
     return numbers;
     
-}
-
-int sum(int num)
-{
-    if (num <=1)
-        return num;
-
-    return num + sum(num-1);
-
 }
